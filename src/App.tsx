@@ -1,10 +1,16 @@
 import "./App.css";
-import Button from "./components/Button";
+import AboutUs from "./components/About";
+import SliderThumbnail from "./components/Slider";
+import Footer from "./layouts/Footer";
+import Header from "./layouts/Header";
 
 function App() {
   return (
     <>
-      <Button text={"123"} />
+      <Header />
+      <SliderThumbnail />
+      <AboutUs />
+      <Footer />
     </>
   );
 }
