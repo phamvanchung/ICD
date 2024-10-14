@@ -1,4 +1,4 @@
-export const LeftIcon = () => {
+export const LeftIcon = (props: any) => {
   return (
     <svg
       id="chev"
@@ -6,6 +6,7 @@ export const LeftIcon = () => {
       width="10"
       height="18"
       viewBox="0 0 10 18"
+      {...props}
     >
       <g
         id="chev-2"

@@ -1,4 +1,4 @@
-export const RightIcon = () => {
+export const RightIcon = (props: any) => {
   return (
     <svg
       id="chev"
@@ -7,6 +7,7 @@ export const RightIcon = () => {
       height="18"
       viewBox="0 0 10 18"
       className="rotate-180"
+      {...props}
     >
       <g
         id="chev-2"
