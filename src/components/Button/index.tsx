@@ -1,11 +1,20 @@
+import React from "react";
 
-interface ButtonProps {
+interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
+  onClick?: () => void;
+  modifier?: "primary" | "normal";
 }
 
-const Button = ({ text }: ButtonProps) => {
+const getButtonClass = (modifier?: "primary" | "normal") => {
+  return modifier === "normal"
+    ? "btn btn-warning w-[41.25vw] h-[4.8vh] min-h-0 rounded-[33px] bg-white text-[#F98F29] border border-[#F98F29]"
+    : "btn btn-warning w-[41.25vw] h-[4.8vh] min-h-0 rounded-[33px] bg-[#F98F29] text-white";
+};
+
+const Button = ({ text, onClick, modifier }: IButtonProps) => {
   return (
-    <button className="btn btn-warning w-[165px] h-[44px] rounded-[33px] bg-[#F98F29] text-white">
+    <button className={getButtonClass(modifier)} onClick={onClick}>
       {text}
     </button>
   );
