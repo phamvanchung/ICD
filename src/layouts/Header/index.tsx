@@ -15,18 +15,22 @@ const Header = () => {
     }
   };
   return (
-    <header className="h-[4.8vh] w-full bg-white flex items-center justify-between pl-2 [filter:drop-shadow(0_0_3px_#00000029)]">
+    <header className="h-[11vw] lg:h-[4.8vw] w-full bg-white flex items-center justify-between pl-2 [filter:drop-shadow(0_0_3px_#00000029)]">
       <img
         src={Logo}
         alt="logo"
-        className="w-[25vw] h-auto"
+        className="w-[25vw] lg:w-[12vw] h-auto"
         onClick={() => navigate("/")}
       />
       <div
         className="w-[10vw] h-full bg-[#F98F29] flex items-center justify-center"
         onClick={handleClickIcon}
       >
-        {homePage ? <EmailIcon /> : <HomeIcon />}
+        {homePage ? (
+          <EmailIcon className="w-[3vw] h-[3vw] cursor-pointer" />
+        ) : (
+          <HomeIcon className="w-[3vw] h-[3vw] cursor-pointer" />
+        )}
       </div>
     </header>
   );

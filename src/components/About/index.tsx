@@ -33,9 +33,9 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="mx-auto px-4 py-8">
       <Title text="ABOUT US" className="mt-0" />
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-3 lg:gap-10">
         {sections.map((section, index) => (
           <div key={index} className="overflow-hidden">
             <img
@@ -44,17 +44,17 @@ const AboutUs = () => {
               className="w-full h-auto rounded object-contain"
             />
             <div className="p-2 pl-0">
-              <h2 className="text-[3.75vw] text-[#333333] font-medium mb-[0.5vh]">
+              <h2 className="text-[3.75vw] lg:text-[2.5vw] text-[#333333] font-medium mb-[0.5vh]">
                 {section.title}
               </h2>
-              <p className="text-[3.3vw] text-[#333333] w-[90%]">
+              <p className="text-[3.3vw] lg:text-[2vw] text-[#333333] w-[90%]">
                 {section.description}
               </p>
             </div>
           </div>
         ))}
       </div>
-      <div className="text-center mt-[4.3vh] mb-[2vh]">
+      <div className="text-center mt-[10.5vw] lg:mt-[6vw] lg:mb-[4vw] mb-[8vw]">
         <Button text="CONTACT" onClick={() => navigate("/contact")} />
       </div>
     </div>

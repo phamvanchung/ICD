@@ -1,4 +1,4 @@
-export const EmailIcon = () => {
+export const EmailIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       id="mail"
@@ -6,6 +6,7 @@ export const EmailIcon = () => {
       width="20"
       height="16"
       viewBox="0 0 20 16"
+      className={className}
     >
       <g id="Layer_1">
         <g id="Layer_1-2" data-name="Layer_1">

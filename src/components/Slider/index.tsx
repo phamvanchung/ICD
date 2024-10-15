@@ -22,15 +22,21 @@ const SliderThumbnail = () => {
   };
 
   return (
-    <div className="carousel w-full h-[24vh]">
+    <div className="carousel w-full h-[60vw] lg:h-[30vw]">
       <div className="carousel-item relative w-full">
         <img src={slides[currentIndex].src} className="w-full object-cover" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 items-center transform justify-between">
-          <LeftIcon onClick={goToPrevSlide} />
-          <span className="text-[5.6vw] text-white [filter:drop-shadow(0_0_10px_#000000BF)]">
+          <LeftIcon
+            onClick={goToPrevSlide}
+            className="w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] cursor-pointer"
+          />
+          <span className="text-[5.6vw] lg:text-[4vw] text-white [filter:drop-shadow(0_0_10px_#000000BF)]">
             Welcome to ICD VIETNAM
           </span>
-          <RightIcon onClick={goToNextSlide} />
+          <RightIcon
+            onClick={goToNextSlide}
+            className="w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] cursor-pointer"
+          />
         </div>
       </div>
     </div>

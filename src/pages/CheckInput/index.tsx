@@ -30,7 +30,10 @@ const CheckInput = () => {
       <Title text="CHECK YOUR INPUT" />
       <div className="space-y-4">
         {data.map((it, idx) => (
-          <div className="text-sm text-[#333333]" key={idx}>
+          <div
+            className="text-sm lg:text-[2vw] leading-normal text-[#333333]"
+            key={idx}
+          >
             <p className="font-medium">{it.label}</p>
             <p className="min-h-[2.4vh]">{it.value}</p>
             {idx !== data.length - 1 && (
@@ -39,7 +42,7 @@ const CheckInput = () => {
           </div>
         ))}
       </div>
-      <div className="mt-10 space-x-4 flex items-center justify-center">
+      <div className="mt-10 lg:my-20 space-x-4 flex items-center justify-center">
         <Button
           text="EDIT"
           modifier="normal"

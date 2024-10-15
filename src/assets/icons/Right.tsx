@@ -6,7 +6,9 @@ export const RightIcon = (props: any) => {
       width="10"
       height="18"
       viewBox="0 0 10 18"
-      className="rotate-180"
+      style={{
+        transform: "rotateY(180deg)",
+      }}
       {...props}
     >
       <g
