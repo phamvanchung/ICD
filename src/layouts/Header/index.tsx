@@ -15,7 +15,7 @@ const Header = () => {
     }
   };
   return (
-    <div className="h-[4.8vh] w-full bg-white flex items-center justify-between pl-2 [filter:drop-shadow(0_0_3px_#00000029)]">
+    <header className="h-[4.8vh] w-full bg-white flex items-center justify-between pl-2 [filter:drop-shadow(0_0_3px_#00000029)]">
       <img
         src={Logo}
         alt="logo"
@@ -28,7 +28,7 @@ const Header = () => {
       >
         {homePage ? <EmailIcon /> : <HomeIcon />}
       </div>
-    </div>
+    </header>
   );
 };
 
