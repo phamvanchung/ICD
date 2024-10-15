@@ -12,10 +12,14 @@ const getButtonClass = (modifier?: "primary" | "normal") => {
     : "btn btn-warning w-[41.25vw] h-[4.8vh] min-h-0 rounded-[33px] bg-[#F98F29] text-white";
 };
 
-const Button = ({ text, onClick, modifier }: IButtonProps) => {
+const Button = (props: IButtonProps) => {
   return (
-    <button className={getButtonClass(modifier)} onClick={onClick}>
-      {text}
+    <button
+      className={getButtonClass(props.modifier)}
+      onClick={props.onClick}
+      {...props}
+    >
+      {props.text}
     </button>
   );
 };
