@@ -34,7 +34,7 @@ const AboutUs = () => {
 
   return (
     <div className="mx-auto px-4 py-8">
-      <Title text="ABOUT US" className="mt-0" />
+      <Title text="ABOUT US" className="!mt-0" />
       <div className="grid grid-cols-2 gap-3 lg:gap-10">
         {sections.map((section, index) => (
           <div key={index} className="overflow-hidden">
@@ -54,7 +54,7 @@ const AboutUs = () => {
           </div>
         ))}
       </div>
-      <div className="text-center mt-[10.5vw] lg:mt-[6vw] lg:mb-[4vw] mb-[8vw]">
+      <div className="text-center mt-[10.5vw] lg:mt-[6vw] lg:mb-[4vw] mb-[4vw]">
         <Button text="CONTACT" onClick={() => navigate("/contact")} />
       </div>
     </div>
