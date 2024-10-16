@@ -46,12 +46,12 @@ const Contact = () => {
           <input
             {...register("name", { required: "Please enter this field" })}
             placeholder="Nguyen Van A"
-            className={`input w-full lg:text-[2vw] lg:h-[4vw] rounded ${
+            className={`input w-full lg:text-[2vw] lg:h-[4vw] h-[10.3vw] rounded focus:outline-none ${
               errors.name ? "input-error" : "border-[#A1A1A1]"
             }`}
           />
           {errors.name && (
-            <p className="text-[#FF1313] text-[3vw] lg:text-[2vw] capitalize mt-1">
+            <p className="text-[#FF1313] text-[3vw] lg:text-[2vw] capitalize">
               {errors.name.message}
             </p>
           )}
@@ -69,12 +69,12 @@ const Contact = () => {
               },
             })}
             placeholder="abc@gmail.com"
-            className={`input w-full lg:text-[2vw] lg:h-[4vw] rounded ${
+            className={`input w-full lg:text-[2vw] lg:h-[4vw] h-[10.3vw] rounded focus:outline-none ${
               errors.email ? "input-error" : "border-[#A1A1A1]"
             }`}
           />
           {errors.email && (
-            <p className="text-[#FF1313] text-[3vw] lg:text-[2vw] capitalize mt-1">
+            <p className="text-[#FF1313] text-[3vw] lg:text-[2vw] capitalize">
               {errors.email.message}
             </p>
           )}
@@ -86,7 +86,7 @@ const Contact = () => {
           <input
             {...register("phoneNumber")}
             placeholder="0000 000 000"
-            className="input w-full lg:text-[2vw] lg:h-[4vw] border-[#A1A1A1] rounded"
+            className="input w-full lg:text-[2vw] lg:h-[4vw] h-[10.3vw] border-[#A1A1A1] rounded focus:outline-none"
           />
         </div>
         <div>
@@ -94,7 +94,7 @@ const Contact = () => {
           <textarea
             {...register("note")}
             placeholder="Enter here"
-            className="textarea border-[#A1A1A1] rounded w-full lg:text-[2vw]"
+            className="textarea border-[#A1A1A1] rounded w-full lg:text-[2vw] focus:outline-none"
           />
         </div>
         <div className="text-center !mt-10 lg:!mt-[4vw] lg:!mb-[4.5vw]">
