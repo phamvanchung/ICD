@@ -25,6 +25,7 @@ const SliderThumbnail = () => {
     <div className="carousel w-full h-[60vw] lg:h-[30vw]">
       <div className="carousel-item relative w-full">
         <img src={slides[currentIndex].src} className="w-full object-cover" />
+        <div className="absolute inset-0 bg-black opacity-50" />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 items-center transform justify-between">
           <LeftIcon
             onClick={goToPrevSlide}

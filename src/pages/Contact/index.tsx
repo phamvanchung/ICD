@@ -38,8 +38,8 @@ const Contact = () => {
   return (
     <div className="w-full p-5">
       <Title text="CONTACT FORM" />
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="mb-7">
           <label className="text-[3.3vw] lg:text-[2.5vw] text-black font-medium">
             Name <span className="text-[#FF1313] ml-[-2px]">*</span>
           </label>
@@ -56,7 +56,7 @@ const Contact = () => {
             </p>
           )}
         </div>
-        <div>
+        <div className="mb-7">
           <label className="text-[3.3vw] lg:text-[2.5vw] text-black font-medium">
             Mail <span className="text-[#FF1313] ml-[-2px]">*</span>
           </label>
@@ -79,7 +79,7 @@ const Contact = () => {
             </p>
           )}
         </div>
-        <div>
+        <div className="mb-7">
           <label className="text-[3.3vw] lg:text-[2.5vw] text-black font-medium">
             Phone Number
           </label>
@@ -89,15 +89,17 @@ const Contact = () => {
             className="input w-full lg:text-[2vw] lg:h-[4vw] text-[3.7vw] h-[10.3vw] border-[#A1A1A1] rounded focus:outline-none"
           />
         </div>
-        <div>
-          <label className="text-[3.3vw] lg:text-[2.5vw] text-black font-medium">Note</label>
+        <div className="mb-7">
+          <label className="text-[3.3vw] lg:text-[2.5vw] text-black font-medium">
+            Note
+          </label>
           <textarea
             {...register("note")}
             placeholder="Enter here"
-            className="textarea border-[#A1A1A1] rounded w-full text-[3.7vw] lg:text-[2vw] focus:outline-none"
+            className="textarea border-[#A1A1A1] lg:h-[4vw] min-h-[30vw] rounded w-full text-[3.7vw] lg:text-[2vw] focus:outline-none"
           />
         </div>
-        <div className="text-center !mt-10 lg:!mt-[4vw] lg:!mb-[4.5vw]">
+        <div className="text-center mt-10 lg:mt-[4vw] lg:mb-[4.5vw]">
           <Button type="submit" text="SUBMIT"></Button>
         </div>
       </form>
