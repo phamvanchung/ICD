@@ -37,7 +37,7 @@ const CheckInput = () => {
             <p className="font-medium">{it.label}</p>
             <p className="min-h-[2.4vh] lg:min-h-[3vw]">{it.value}</p>
             {idx !== data.length - 1 && (
-              <div className="mt-3 border-b border-[#A1A1A1]" />
+              <div className="mt-4 border-b border-[#A1A1A1]" />
             )}
           </div>
         ))}
