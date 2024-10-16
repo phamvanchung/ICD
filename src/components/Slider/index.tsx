@@ -31,7 +31,7 @@ const SliderThumbnail = () => {
             onClick={goToPrevSlide}
             className="w-[5vw] h-[5vw] lg:w-[3vw] lg:h-[3vw] cursor-pointer"
           />
-          <span className="text-[5.6vw] lg:text-[4vw] text-white [filter:drop-shadow(0_0_10px_#000000BF)]">
+          <span className="text-[5.6vw] lg:text-[4vw] font-medium text-white [filter:drop-shadow(0_0_10px_#000000BF)]">
             Welcome to ICD VIETNAM
           </span>
           <RightIcon
