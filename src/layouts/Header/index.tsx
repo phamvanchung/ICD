@@ -23,13 +23,13 @@ const Header = () => {
         onClick={() => navigate("/")}
       />
       <div
-        className="w-[10vw] h-full bg-[#F98F29] flex items-center justify-center"
+        className="w-[12vw] lg:w-[8vw] h-full bg-[#F98F29] flex items-center justify-center"
         onClick={handleClickIcon}
       >
         {homePage ? (
-          <EmailIcon className="w-[3vw] h-[3vw] cursor-pointer" />
+          <EmailIcon className="lg:w-[3vw] lg:h-[3vw] w-[5vw] h-[5vw] cursor-pointer" />
         ) : (
-          <HomeIcon className="w-[3vw] h-[3vw] cursor-pointer" />
+          <HomeIcon className="lg:w-[3vw] lg:h-[3vw] w-[5vw] h-[5vw] cursor-pointer" />
         )}
       </div>
     </header>
