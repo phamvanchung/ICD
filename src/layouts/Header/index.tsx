@@ -19,7 +19,7 @@ const Header = () => {
       <img
         src={Logo}
         alt="logo"
-        className="w-[25vw] lg:w-[12vw] h-auto"
+        className="w-[26vw] lg:w-[12vw] h-auto"
         onClick={() => navigate("/")}
       />
       <div
